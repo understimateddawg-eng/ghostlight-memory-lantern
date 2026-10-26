@@ -1,0 +1,6 @@
+{
+  "name": "Ghostlight — The Memory Lantern",
+  "description": "An interactive digital ofrenda and memory archive that preserves heartfelt tributes, remembrance letters, marigold poems, and atmospheric stories using open-weight AI running locally in the browser.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

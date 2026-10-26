@@ -1,0 +1,22 @@
+{
+  "name": "Ghostlight — The Memory Lantern",
+  "short_name": "Ghostlight",
+  "description": "An interactive digital ofrenda and memory sanctuary powered by local open-weight AI.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0B0A10",
+  "theme_color": "#0B0A10",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='40' fill='%230B0A10'/%3E%3Ccircle cx='96' cy='96' r='70' fill='%23201A28' stroke='%23E7BD72' stroke-width='4'/%3E%3Cpath d='M96 32 C96 32 60 76 60 114 a36 36 0 0 0 72 0 c0-38-36-82-36-82 z' fill='%23E98736'/%3E%3Cpath d='M96 60 C96 60 74 96 74 120 a22 22 0 0 0 44 0 c0-24-22-60-22-60 z' fill='%23E7BD72'/%3E%3Cpath d='M96 90 C96 90 84 112 84 126 a12 12 0 0 0 24 0 c0-14-12-36-12-36 z' fill='%23FFF3D6'/%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='100' fill='%230B0A10'/%3E%3Ccircle cx='256' cy='256' r='180' fill='%23201A28' stroke='%23E7BD72' stroke-width='10'/%3E%3Cpath d='M256 80 C256 80 160 200 160 300 a96 96 0 0 0 192 0 c0-100-96-220-96-220 z' fill='%23E98736'/%3E%3Cpath d='M256 160 C256 160 195 250 195 315 a61 61 0 0 0 122 0 c0-65-61-155-61-155 z' fill='%23E7BD72'/%3E%3Cpath d='M256 240 C256 240 224 290 224 330 a32 32 0 0 0 64 0 c0-40-32-90-32-90 z' fill='%23FFF3D6'/%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

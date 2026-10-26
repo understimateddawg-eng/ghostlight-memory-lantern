@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --night: #0B0813;
+    --night-alt: #130E1F;
+    --plum: #1A1228;
+    --panel: #231A33;
+    --panel-hover: #2E2242;
+    --gold: #F3C978;
+    --gold-bright: #FFE08F;
+    --gold-glow: rgba(243, 201, 120, 0.35);
+    --marigold: #FF8533;
+    --marigold-deep: #D95D16;
+    --marigold-glow: rgba(255, 133, 51, 0.4);
+    --ivory: #FFF9F0;
+    --ivory-dim: #EFE3D3;
+    --muted: #C1B5C8;
+    --border: rgba(255, 249, 240, 0.12);
+    --border-gold: rgba(243, 201, 120, 0.4);
+  }
+
+  body {
+    background-color: var(--night);
+    color: var(--ivory);
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif-title {
+    font-family: 'Cinzel', 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: 0.02em;
+  }
+
+  .font-literary {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Candle flame animations */
+@keyframes flicker {
+  0%, 100% {
+    transform: scale(1) rotate(-0.5deg);
+    opacity: 0.96;
+    filter: drop-shadow(0 0 18px rgba(255, 133, 51, 0.75)) drop-shadow(0 0 36px rgba(243, 201, 120, 0.45));
+  }
+  25% {
+    transform: scale(1.05, 0.98) rotate(1deg);
+    opacity: 1;
+    filter: drop-shadow(0 0 26px rgba(255, 133, 51, 0.85)) drop-shadow(0 0 46px rgba(243, 201, 120, 0.55));
+  }
+  50% {
+    transform: scale(0.97, 1.03) rotate(-1deg);
+    opacity: 0.92;
+    filter: drop-shadow(0 0 16px rgba(255, 133, 51, 0.7)) drop-shadow(0 0 32px rgba(243, 201, 120, 0.4));
+  }
+  75% {
+    transform: scale(1.03, 1.01) rotate(0.5deg);
+    opacity: 0.98;
+    filter: drop-shadow(0 0 24px rgba(255, 133, 51, 0.8)) drop-shadow(0 0 42px rgba(243, 201, 120, 0.5));
+  }
+}
+
+@keyframes float-petal {
+  0% {
+    transform: translateY(0) rotate(0deg) translateX(0);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-110vh) rotate(360deg) translateX(50px);
+    opacity: 0;
+  }
+}
+
+@keyframes firefly {
+  0%, 100% {
+    opacity: 0.25;
+    transform: translate(0, 0) scale(0.8);
+  }
+  50% {
+    opacity: 0.95;
+    transform: translate(20px, -24px) scale(1.25);
+  }
+}
+
+@keyframes gentle-float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes subtle-pulse {
+  0%, 100% {
+    box-shadow: 0 0 28px -4px rgba(243, 201, 120, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 48px 2px rgba(255, 133, 51, 0.35);
+  }
+}
+
+.flame-flicker {
+  animation: flicker 3s ease-in-out infinite;
+  transform-origin: center bottom;
+}
+
+.lantern-glow {
+  animation: subtle-pulse 4s ease-in-out infinite;
+}
+
+.float-hover {
+  animation: gentle-float 4s ease-in-out infinite;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .flame-flicker,
+  .lantern-glow,
+  .floating-petal,
+  .firefly-node,
+  .float-hover {
+    animation: none !important;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #140E20;
+}
+::-webkit-scrollbar-thumb {
+  background: #322547;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F3C978;
+}
